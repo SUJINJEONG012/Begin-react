@@ -1,5 +1,6 @@
 import React from "react";
 import Hello from './Hello';
+import './App.css';
 
 function App() {
   const name= 'react';
@@ -10,10 +11,11 @@ function App() {
     padding:'1rem'
   }
   return (
-    <div className="App">
+    <>
       <Hello/>
       <div style={style}>{name}</div>
-    </div>
+      <div className="gray-box"></div>
+    </>
   );
 }
 
