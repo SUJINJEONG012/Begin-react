@@ -1,5 +1,10 @@
 import React from "react";
 
+function User({user}){
+
+}
+
+
 function UserList(){
     const users = [
         {
