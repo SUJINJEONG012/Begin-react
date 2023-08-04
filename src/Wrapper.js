@@ -1,6 +1,6 @@
 import React from "react";
 
-function Wrapper(){
+function Wrapper({children}){
     
     const style={
         border:'2px solid black',
@@ -9,7 +9,7 @@ function Wrapper(){
 
     return (
         <div style={style}>
-
+            {children}
         </div>
     )
 }
