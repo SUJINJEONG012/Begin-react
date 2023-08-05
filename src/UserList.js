@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 function User({user}){
   return(
@@ -27,6 +27,12 @@ function UserList(){
             email:'test@naver.com'
         }
     ];
+    
+    const nextId = useRef(4);
+    const onCreate = ()=>{
+        //나중에 구현 할 배열에 항목추가하는 로직
+        nextId.current +=1;
+    };
 
     return (
         <div>
